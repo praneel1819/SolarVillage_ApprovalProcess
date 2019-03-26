@@ -6,12 +6,48 @@ package com.myspace.solarvillage_approvalprocess;
 
 public class ResidentialElectricalPermReq implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ResidentialElectricalPermReq() {
-    }
+	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	private java.lang.String applicantName;
+	@org.kie.api.definition.type.Label(value = "Applicant Address")
+	private java.lang.String applicantAddress;
+	@org.kie.api.definition.type.Label(value = "Solar new order Permit ID")
+	private java.lang.Long solarNewOrderPermitID;
 
+	public ResidentialElectricalPermReq() {
+	}
 
+	public java.lang.String getApplicantName() {
+		return this.applicantName;
+	}
 
+	public void setApplicantName(java.lang.String applicantName) {
+		this.applicantName = applicantName;
+	}
+
+	public java.lang.String getApplicantAddress() {
+		return this.applicantAddress;
+	}
+
+	public void setApplicantAddress(java.lang.String applicantAddress) {
+		this.applicantAddress = applicantAddress;
+	}
+
+	public java.lang.Long getSolarNewOrderPermitID() {
+		return this.solarNewOrderPermitID;
+	}
+
+	public void setSolarNewOrderPermitID(java.lang.Long solarNewOrderPermitID) {
+		this.solarNewOrderPermitID = solarNewOrderPermitID;
+	}
+
+	public ResidentialElectricalPermReq(java.lang.String applicantName,
+			java.lang.String applicantAddress,
+			java.lang.Long solarNewOrderPermitID) {
+		this.applicantName = applicantName;
+		this.applicantAddress = applicantAddress;
+		this.solarNewOrderPermitID = solarNewOrderPermitID;
+	}
 
 }
