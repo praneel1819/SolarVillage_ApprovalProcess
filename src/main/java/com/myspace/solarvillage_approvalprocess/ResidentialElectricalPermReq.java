@@ -8,11 +8,11 @@ public class ResidentialElectricalPermReq implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String applicantName;
-	@org.kie.api.definition.type.Label(value = "Applicant Address")
+	@org.kie.api.definition.type.Label("Applicant Address")
 	private java.lang.String applicantAddress;
-	@org.kie.api.definition.type.Label(value = "Solar new order Permit ID")
+	@org.kie.api.definition.type.Label("Solar new order Permit ID")
 	private java.lang.Long solarNewOrderPermitID;
 
 	public ResidentialElectricalPermReq() {
