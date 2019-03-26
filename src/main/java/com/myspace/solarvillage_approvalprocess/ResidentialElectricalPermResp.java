@@ -8,20 +8,12 @@ public class ResidentialElectricalPermResp implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Electrical Permit ID")
-	private java.lang.Long elecPermitId;
-	@org.kie.api.definition.type.Label(value = "Status of the permit")
+	@org.kie.api.definition.type.Label("Electrical Permit ID")
+	private String elecPermitId;
+	@org.kie.api.definition.type.Label("Status of the permit")
 	private java.lang.String status;
 
 	public ResidentialElectricalPermResp() {
-	}
-
-	public java.lang.Long getElecPermitId() {
-		return this.elecPermitId;
-	}
-
-	public void setElecPermitId(java.lang.Long elecPermitId) {
-		this.elecPermitId = elecPermitId;
 	}
 
 	public java.lang.String getStatus() {
@@ -32,7 +24,15 @@ public class ResidentialElectricalPermResp implements java.io.Serializable {
 		this.status = status;
 	}
 
-	public ResidentialElectricalPermResp(java.lang.Long elecPermitId,
+	public java.lang.String getElecPermitId() {
+		return this.elecPermitId;
+	}
+
+	public void setElecPermitId(java.lang.String elecPermitId) {
+		this.elecPermitId = elecPermitId;
+	}
+
+	public ResidentialElectricalPermResp(java.lang.String elecPermitId,
 			java.lang.String status) {
 		this.elecPermitId = elecPermitId;
 		this.status = status;
