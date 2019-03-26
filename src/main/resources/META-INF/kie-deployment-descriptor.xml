@@ -9,7 +9,20 @@
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
-    <work-item-handlers/>
+    <work-item-handlers>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>org.jbpm.process.workitem.rest.RESTWorkItemHandler</identifier>
+            <parameters/>
+            <name>REST</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>org.jbpm.process.workitem.email.EmailWorkItemHandler</identifier>
+            <parameters/>
+            <name>EMAIL</name>
+        </work-item-handler>
+    </work-item-handlers>
     <environment-entries/>
     <configurations/>
     <required-roles/>
