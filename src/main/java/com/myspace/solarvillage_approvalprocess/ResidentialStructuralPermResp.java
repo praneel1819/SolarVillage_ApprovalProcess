@@ -6,12 +6,36 @@ package com.myspace.solarvillage_approvalprocess;
 
 public class ResidentialStructuralPermResp implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public ResidentialStructuralPermResp() {
-    }
+	@org.kie.api.definition.type.Label(value = "Structural Permit Id")
+	private java.lang.String strucPermitId;
+	@org.kie.api.definition.type.Label(value = "Status of the Permit")
+	private java.lang.String status;
 
+	public ResidentialStructuralPermResp() {
+	}
 
+	public java.lang.String getStrucPermitId() {
+		return this.strucPermitId;
+	}
 
+	public void setStrucPermitId(java.lang.String strucPermitId) {
+		this.strucPermitId = strucPermitId;
+	}
+
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
+	public ResidentialStructuralPermResp(java.lang.String strucPermitId,
+			java.lang.String status) {
+		this.strucPermitId = strucPermitId;
+		this.status = status;
+	}
 
 }
