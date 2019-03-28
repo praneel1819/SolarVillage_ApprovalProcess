@@ -8,7 +8,7 @@ public class SolarNewOrder implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Solar New order Permit Id unique")
+	@org.kie.api.definition.type.Label("Solar New order Permit Id")
 	private java.lang.Long solarNewOrderPermitID;
 	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String applicantName;
@@ -16,16 +16,16 @@ public class SolarNewOrder implements java.io.Serializable {
 	private java.lang.String applicantAddress;
 	@org.kie.api.definition.type.Label("HOA Meeting Scheduled Date")
 	private java.util.Date HOAMeetingDate;
-	@org.kie.api.definition.type.Label("HOA Approved ?")
+	@org.kie.api.definition.type.Label("Did HOA Approve")
 	private java.lang.Boolean isHOAApproved;
 	@org.kie.api.definition.type.Label("Did Sales Rep Accept")
 	private java.lang.Boolean isSalesRepAccept;
 	@org.kie.api.definition.type.Label("Escalated to Executive")
 	private java.lang.Boolean escalationToExec;
-	@org.kie.api.definition.type.Label("EscalationEmailSent")
+	@org.kie.api.definition.type.Label("Escalation Email Sent to Executive")
 	private java.lang.Boolean escalationEmailSent;
 
-	@org.kie.api.definition.type.Label(value = "Status of the Solar New Order permit")
+	@org.kie.api.definition.type.Label("Status of the Solar New Order permit")
 	private java.lang.String solarNewOrderPermitStatus;
 
 	public SolarNewOrder() {
