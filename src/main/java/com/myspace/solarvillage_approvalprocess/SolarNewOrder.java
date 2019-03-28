@@ -8,22 +8,25 @@ public class SolarNewOrder implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Solar New order Permit Id unique")
+	@org.kie.api.definition.type.Label("Solar New order Permit Id unique")
 	private java.lang.Long solarNewOrderPermitID;
-	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String applicantName;
-	@org.kie.api.definition.type.Label(value = "Applicant Address")
+	@org.kie.api.definition.type.Label("Applicant Address")
 	private java.lang.String applicantAddress;
-	@org.kie.api.definition.type.Label(value = "HOA Meeting Scheduled Date")
+	@org.kie.api.definition.type.Label("HOA Meeting Scheduled Date")
 	private java.util.Date HOAMeetingDate;
-	@org.kie.api.definition.type.Label(value = "HOA Approved ?")
+	@org.kie.api.definition.type.Label("HOA Approved ?")
 	private java.lang.Boolean isHOAApproved;
-	@org.kie.api.definition.type.Label(value = "Did Sales Rep Accept")
+	@org.kie.api.definition.type.Label("Did Sales Rep Accept")
 	private java.lang.Boolean isSalesRepAccept;
-	@org.kie.api.definition.type.Label(value = "Escalated to Executive")
+	@org.kie.api.definition.type.Label("Escalated to Executive")
 	private java.lang.Boolean escalationToExec;
-	@org.kie.api.definition.type.Label(value = "EscalationEmailSent")
+	@org.kie.api.definition.type.Label("EscalationEmailSent")
 	private java.lang.Boolean escalationEmailSent;
+
+	@org.kie.api.definition.type.Label(value = "Status of the Solar New Order permit")
+	private java.lang.String solarNewOrderPermitStatus;
 
 	public SolarNewOrder() {
 	}
@@ -92,12 +95,22 @@ public class SolarNewOrder implements java.io.Serializable {
 		this.escalationEmailSent = escalationEmailSent;
 	}
 
+	public java.lang.String getSolarNewOrderPermitStatus() {
+		return this.solarNewOrderPermitStatus;
+	}
+
+	public void setSolarNewOrderPermitStatus(
+			java.lang.String solarNewOrderPermitStatus) {
+		this.solarNewOrderPermitStatus = solarNewOrderPermitStatus;
+	}
+
 	public SolarNewOrder(java.lang.Long solarNewOrderPermitID,
 			java.lang.String applicantName, java.lang.String applicantAddress,
 			java.util.Date HOAMeetingDate, java.lang.Boolean isHOAApproved,
 			java.lang.Boolean isSalesRepAccept,
 			java.lang.Boolean escalationToExec,
-			java.lang.Boolean escalationEmailSent) {
+			java.lang.Boolean escalationEmailSent,
+			java.lang.String solarNewOrderPermitStatus) {
 		this.solarNewOrderPermitID = solarNewOrderPermitID;
 		this.applicantName = applicantName;
 		this.applicantAddress = applicantAddress;
@@ -106,6 +119,7 @@ public class SolarNewOrder implements java.io.Serializable {
 		this.isSalesRepAccept = isSalesRepAccept;
 		this.escalationToExec = escalationToExec;
 		this.escalationEmailSent = escalationEmailSent;
+		this.solarNewOrderPermitStatus = solarNewOrderPermitStatus;
 	}
 
 }
