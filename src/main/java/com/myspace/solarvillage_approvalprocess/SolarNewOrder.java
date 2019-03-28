@@ -28,6 +28,9 @@ public class SolarNewOrder implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Status of the Solar New Order permit")
 	private java.lang.String solarNewOrderPermitStatus;
 
+	@org.kie.api.definition.type.Label(value = "Annual Income")
+	private java.lang.String applicantAnnualIncome;
+
 	public SolarNewOrder() {
 	}
 
@@ -104,13 +107,22 @@ public class SolarNewOrder implements java.io.Serializable {
 		this.solarNewOrderPermitStatus = solarNewOrderPermitStatus;
 	}
 
+	public java.lang.String getApplicantAnnualIncome() {
+		return this.applicantAnnualIncome;
+	}
+
+	public void setApplicantAnnualIncome(java.lang.String applicantAnnualIncome) {
+		this.applicantAnnualIncome = applicantAnnualIncome;
+	}
+
 	public SolarNewOrder(java.lang.Long solarNewOrderPermitID,
 			java.lang.String applicantName, java.lang.String applicantAddress,
 			java.util.Date HOAMeetingDate, java.lang.Boolean isHOAApproved,
 			java.lang.Boolean isSalesRepAccept,
 			java.lang.Boolean escalationToExec,
 			java.lang.Boolean escalationEmailSent,
-			java.lang.String solarNewOrderPermitStatus) {
+			java.lang.String solarNewOrderPermitStatus,
+			java.lang.String applicantAnnualIncome) {
 		this.solarNewOrderPermitID = solarNewOrderPermitID;
 		this.applicantName = applicantName;
 		this.applicantAddress = applicantAddress;
@@ -120,6 +132,7 @@ public class SolarNewOrder implements java.io.Serializable {
 		this.escalationToExec = escalationToExec;
 		this.escalationEmailSent = escalationEmailSent;
 		this.solarNewOrderPermitStatus = solarNewOrderPermitStatus;
+		this.applicantAnnualIncome = applicantAnnualIncome;
 	}
 
 }
