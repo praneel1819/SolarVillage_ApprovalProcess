@@ -6,12 +6,48 @@ package com.myspace.solarvillage_approvalprocess;
 
 public class newOrderApplication implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public newOrderApplication() {
-    }
+	@org.kie.api.definition.type.Label(value = "Applicant Name")
+	private java.lang.String applicantName;
+	@org.kie.api.definition.type.Label(value = "Applicant Address")
+	private java.lang.String applicantAddress;
+	@org.kie.api.definition.type.Label(value = "Annual Income")
+	private java.lang.String applicantAnnualIncome;
 
+	public newOrderApplication() {
+	}
 
+	public java.lang.String getApplicantName() {
+		return this.applicantName;
+	}
 
+	public void setApplicantName(java.lang.String applicantName) {
+		this.applicantName = applicantName;
+	}
+
+	public java.lang.String getApplicantAddress() {
+		return this.applicantAddress;
+	}
+
+	public void setApplicantAddress(java.lang.String applicantAddress) {
+		this.applicantAddress = applicantAddress;
+	}
+
+	public java.lang.String getApplicantAnnualIncome() {
+		return this.applicantAnnualIncome;
+	}
+
+	public void setApplicantAnnualIncome(java.lang.String applicantAnnualIncome) {
+		this.applicantAnnualIncome = applicantAnnualIncome;
+	}
+
+	public newOrderApplication(java.lang.String applicantName,
+			java.lang.String applicantAddress,
+			java.lang.String applicantAnnualIncome) {
+		this.applicantName = applicantName;
+		this.applicantAddress = applicantAddress;
+		this.applicantAnnualIncome = applicantAnnualIncome;
+	}
 
 }
