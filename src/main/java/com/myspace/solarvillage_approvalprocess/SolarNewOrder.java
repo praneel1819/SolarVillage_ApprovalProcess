@@ -16,8 +16,6 @@ public class SolarNewOrder implements java.io.Serializable {
 	private java.lang.String applicantAddress;
 	@org.kie.api.definition.type.Label("HOA Meeting Scheduled Date")
 	private java.util.Date HOAMeetingDate;
-	@org.kie.api.definition.type.Label("Did HOA Approve")
-	private java.lang.Boolean isHOAApproved;
 	@org.kie.api.definition.type.Label("Did Sales Rep Accept")
 	private java.lang.Boolean isSalesRepAccept;
 	@org.kie.api.definition.type.Label("Escalated to Executive")
@@ -28,7 +26,7 @@ public class SolarNewOrder implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Status of the Solar New Order permit")
 	private java.lang.String solarNewOrderPermitStatus;
 
-	@org.kie.api.definition.type.Label(value = "Annual Income")
+	@org.kie.api.definition.type.Label("Annual Income")
 	private java.lang.String applicantAnnualIncome;
 
 	public SolarNewOrder() {
@@ -64,14 +62,6 @@ public class SolarNewOrder implements java.io.Serializable {
 
 	public void setHOAMeetingDate(java.util.Date HOAMeetingDate) {
 		this.HOAMeetingDate = HOAMeetingDate;
-	}
-
-	public java.lang.Boolean getIsHOAApproved() {
-		return this.isHOAApproved;
-	}
-
-	public void setIsHOAApproved(java.lang.Boolean isHOAApproved) {
-		this.isHOAApproved = isHOAApproved;
 	}
 
 	public java.lang.Boolean getIsSalesRepAccept() {
@@ -117,8 +107,7 @@ public class SolarNewOrder implements java.io.Serializable {
 
 	public SolarNewOrder(java.lang.Long solarNewOrderPermitID,
 			java.lang.String applicantName, java.lang.String applicantAddress,
-			java.util.Date HOAMeetingDate, java.lang.Boolean isHOAApproved,
-			java.lang.Boolean isSalesRepAccept,
+			java.util.Date HOAMeetingDate, java.lang.Boolean isSalesRepAccept,
 			java.lang.Boolean escalationToExec,
 			java.lang.Boolean escalationEmailSent,
 			java.lang.String solarNewOrderPermitStatus,
@@ -127,7 +116,6 @@ public class SolarNewOrder implements java.io.Serializable {
 		this.applicantName = applicantName;
 		this.applicantAddress = applicantAddress;
 		this.HOAMeetingDate = HOAMeetingDate;
-		this.isHOAApproved = isHOAApproved;
 		this.isSalesRepAccept = isSalesRepAccept;
 		this.escalationToExec = escalationToExec;
 		this.escalationEmailSent = escalationEmailSent;
